@@ -1,0 +1,150 @@
+.contact{
+  padding: 58px 74px;
+  background-color: #5267DF;
+}
+
+.contact__wrap{
+  width: 445px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact__text{
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #FFFFFF;
+}
+
+.contact__title{
+  margin: 0;
+  margin-bottom: 36px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #FFFFFF;
+}
+
+.contact__form{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.form__wrap{
+  position: relative;
+}
+
+.form__input{
+  width: 300px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #424865;
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+  left: 5px;
+}
+
+.form__input::placeholder{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: rgba(36, 42, 69, 0.250109);
+}
+
+.form__input:focus{
+  outline: none;
+  outline: 2px solid #7e818d;
+  box-shadow: inset rgba(60, 64, 67, 0.2) 0px 1px 2px 0px, rgba(60, 64, 67, 0.13) 0px 2px 6px 2px;
+}
+
+
+.form__span{
+  width: 304px;
+  height: 60px;
+  display: inline-block;
+  text-align: start;
+  font-family: 'Rubik';
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.25px;
+  color: #FFFFFF;
+  background-color: #FA5959;
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 6px;
+  padding-left: 13px; 
+  opacity: 1;
+  top: 3px;
+  left: 3px;
+  border-radius: 5px;
+  opacity: 0;
+  position: relative;
+}
+
+.form__span::after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 12px;
+  background-image: url(../images/error.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 5;
+}
+
+.form__btn{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #FFFFFF;
+  padding: 10px 24px;
+  background-color: #FA5959;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  border: none;
+  border: 2px solid transparent;
+  margin-top: 4px;
+  transition: all 0.3s ease;
+}
+
+.form__btn:hover{
+  color: #FA5959;
+  background-color: #ffffff;
+  border-color:#FA5959 ;
+}
+
+.form__input:not(:placeholder-shown):not(:focus):invalid ~ .form__span{
+  opacity: 1; 
+}
+
+.form__input:not(:placeholder-shown):not(:focus):invalid ~ .form__wrap{
+  background-color: #220d0d;
+}
+
