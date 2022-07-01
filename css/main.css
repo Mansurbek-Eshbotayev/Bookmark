@@ -984,7 +984,7 @@ hr {
   position: absolute;
 }
 
-.asked__open--one[open]::after {
+.asked__open--one:focus::after {
   content: "";
   width: 16px;
   height: 8px;
